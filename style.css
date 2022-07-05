@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-----Header-----*/
+.cec_title{
+    font-size: 29px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+
+/*-----Sliding image-----*/
+.carousel-item{
+    height: 100vh;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: auto;
+    background-size: contain;
+}
+.overlay-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+}
+
+/*-----Deparment-----*/
+.Departments{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+
+}
+.main-department{
+    margin-top: 5%;
+    justify-content: space-between;
+    display: flex;
+}
+.department-col{
+    flex-basis: 31%;
+    background: rgba(2, 2, 92, 0.116);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 15px 15px;    
+    box-sizing: border-box;
+    margin: 20px;
+    font-family: sans-serif;
+    transition: 0.5s;
+
+}
+.department-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.281);
+}
+@media(max-width:700px){
+    .main-department{
+        flex-direction: column;
+    }
+    .carousel-item{
+        flex-direction: column;
+    }
+}
+
+/*-----events-----*/
+#events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+
+}
+.events-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+
+}
+.events-col img{
+    width: 250px;
+    height: 250px;
+
+}
+.events-col img{
+    transition: 0.5s;
+}
+.events-col img:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.205);
+}
+.layer h3{
+    padding: 20px;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*-----about--us----*/
+.about-us{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+
+}
+.icon{
+    min-height:70vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(college1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+
+}
+.icon h1{
+    margin: 145px 0 40px;
+}
+.icon p{
+    margin: 10px 0 40px;
+    margin-left: 30px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.icon:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.205);
+}
+
+/*--------contact-us------*/
+.contact-us{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+}
